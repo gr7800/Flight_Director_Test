@@ -94,7 +94,7 @@ const Startpractice = () => {
 
       // Increase score if lines are yellow
       if ((Math.abs(centerPoint.y - y) < 10) && (Math.abs(centerPoint.x - x) < 10)) {
-        setScore((sc)=>sc+1);
+        setScore((sc) => sc + 1);
       }
     };
 
@@ -109,7 +109,7 @@ const Startpractice = () => {
 
   return (
     <Box bg="aquamarine" >
-      <Box width={"100%"} display={"flex"} justifyContent={"flex-end"}>
+      <Box width={"100%"} display={"flex"}>
         <CircularProgress
           value={progress}
           max={100}

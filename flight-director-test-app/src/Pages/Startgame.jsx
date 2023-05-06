@@ -111,11 +111,10 @@ const Startgame = () => {
   
   
     return (
-      <Box bg="aquamarine" >
-        <Box width={"100%"} display={"flex"} justifyContent={"flex-end"}>
+      <Box bg="aquamarine" maxW={"100%"} >
+        <Box width={"100%"} display={"flex"} >
           <CircularProgress
             value={progress}
-            max={100}
             color={progress < 50 ? "green.400" : progress < 80 ? "yellow.400" : "red.400"}
             size="120px"
             thickness="8px"
